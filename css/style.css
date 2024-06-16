@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 5px;
+    color: rgb( 158, 91, 13);
+    background-color: rgb(219, 255, 0);
+    text-align: center;
+    font-weight: bolder;
+}
+
+.navbar_container {
+    padding-block: 10px;
+    background-color: rgb(219, 255, 0);
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+
+.navbar_container .logo img {
+    width: 150px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem 2rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    padding: 0.5rem 1.5rem;
+   
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb( 158, 91, 13);
+}
+
+li:hover a {
+    color: white;
+}
+
+.card {
+    box-shadow: 0px 0px 5px 3px rgba(102, 92, 92, 0.2);    
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+main {
+    padding: 10px;
+    display: flex;
+    gap: 2rem;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+#content .card{
+    text-align: center;
+}
+
+table{
+    max-height: 300;
+}
+table th{
+    padding: 3px;
+}
+table td{
+    padding: 3px;
+}
+
+article h2{
+    text-align: center;
+}
+section table{
+    text-align: left;
+}
+.tabel_informasi{
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    max-height: 250px;
+    max-width: 300px;
+    object-fit: fill;
+    object-position: cover;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.Author img{
+    width: 200px;
+    border-style: solid;
+    border-radius: 999px;
+    border-width: 1px;
+}
+
+aside{
+    text-align: center;
+}
+
+.Author_color h2{
+    background-color: rgb(219, 255, 0);
+    padding: 3px;
+    border: 2px;
+    border-style: solid;
+}
+
+.karakter {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card_inside p{
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb( 158, 91, 13);
+    background-color:  rgb(219, 255, 0);
+}
+
+.anime{
+    display: flex;
+    justify-content: space-around;
+}
+.in a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 1500px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+        align-self: stretch;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .karakter {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .anime{
+        flex-wrap: wrap;
+    }
+    
+}
